@@ -1,0 +1,70 @@
+1.
+(a*b)'*(a'+b)*(b'+b)=a'
+
+(a*b)'*(a'+b)*(1) Complement
+(a'+b')*(a'+b)*1 DeMorgan's
+(a'*a')+(a'*b')+(b'*b)+(b'*b)*1 Distributive
+a'+(a'*b')+(b'*b)+(b'*b)*1 Idempotence
+(a'*b')+(b'*b)+1*1 Complement
+(a'*b')+1*1 Idempotence
+(a'*b')+1 Complement
+a'+b'+1 DeMorgan
+a' 		ID
+
+2.
+c+(b*c)' =1
+
+c+b'+c' DeMorgan
+c+c'+b' Commutative
+1+b'	Complement
+1		ID
+
+3.
+(a+ c) * (a * d + a * d') + a * c + c = a + c
+
+(a+ c) * (a(d+d') + a * c + c  Distributive
+(a+ c) * a(1) + a * c + c 		Complement
+(a+ c) * a + a * c + c 			Distributive
+a*a+a*c+a*c+c					Idempotence
+c*(a+1) +a*a					Distributive
+c*1+a*a							ID
+c+a*a							ID
+
+4.
+a' * (a + b) + (b + a * a) * (a + b')
+
+a' * (a + b) + (b + a) * (a + b') Idempotence
+a' *(a+b) *(a+b') 				Idempotence
+a' *((a*a)+(a*b')+(a*b) +(b*b')) Distributive
+a' *(a+(a*b')+(a*b) +(b*b')) Idempotence
+a' *(a+(a*b')+(a*b) +0) Idempotence
+a' *a*(1+(1*b')+(1+b) Distributive
+a'*a*(1+1+(1+b)) 		ID
+a'*a*(1+1+1)			ID
+0+1						ID
+1			
+
+5.
+(a' * b') + (a' * b) + (a * b') = (a * b)'
+a'((1*b') + (1*b)) + (a*b')  Distributive
+a'( b'+ (1*b))+ (a*b') 		ID
+a'(b'+b) + (a*b')  			ID
+a'(0) + (a*b') 				Complement
+a' +a*b'					ID
+0+b							Complement
+b 							ID 
+
+1. a'+b' + c*a'
+2. 1*0 +1
+
+A	B	x	y
+0	0	0	0
+0	0	0	1
+0	0	1	0
+0	0	1	1
+0	1	0	1
+0	1	1 	0
+0	1 	1 	1 
+1 	0	1 	0
+1 	1 	1 	0
+1 	1 	1 	1 
